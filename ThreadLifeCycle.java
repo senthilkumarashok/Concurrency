@@ -1,6 +1,6 @@
 public class ThreadLifeCycle {
     public static void main(String args[]) throws Exception {
-    
+        printCurrentThreadState(null);
        //Runnable r = () -> { System.out.println(Thread.currentThread().getName()); };
        Thread t1 = new Thread(() -> { // anonymous runnable interface using lambda
            int i = 5;
